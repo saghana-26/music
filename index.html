@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+        <title>webpage design</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="main">
+    <div class="navbar">
+     <div class="icon">
+             <h2 class="logo">MUSIC</h2>
+         </div>
+         <div class="menu">
+             <ul>
+                 <li><a href="#">ABOUT</a></li>
+                 <li><a href="#">DESIGN</a></li>
+             </ul>
+             
+         </div>
+      </div>
+      <div class="content">
+         <h1>TUNE UP TOGETHER</h1>
+         <p class="par">where words leave off music begins....<br>
+            This is a platform that helps you to listen to songs with your family and friends <br>at the same time, even when you are at different places.
+            </p>
+         
+     </div>
+     <div id="login-form" class = "form">
+          <div class = "button-box">
+              <div id="btn"></div>
+              <button type="button" onclick="login()" class ="toggle-btn">Log In</button>
+              <button type="button" onclick="register()" class ="toggle-btn">Register</button>
+          </div>
+          <form id="login" class="input-login">
+             <input type="email" class="input-block" placeholder="enter email" required>
+             <input type="password" class="input-block" placeholder="enter password"required>
+             <!-- <input type ="remember" class="rem-pass"><span>remember password</span> -->
+             <button class ="submit-btn"><a href="#">LOGIN</a></button>
+          </form>
+         <form id="register" class="input-register">
+            <input type="text"class="input-block"placeholder="user id" required>
+            <input type="email"class="input-block"placeholder="Email Id" required>
+            <input type="password"class="input-block"placeholder="Enter Password" required>
+            <input type="password"class="input-block"placeholder="Confirm Password"  required>
+            <button type="submit" class="submit-btn">REGISTER</button>
+        </form>
+            </div>
+
+    </div>
+  </div>s
+  <script>
+    var x=document.getElementById('login');
+    var y=document.getElementById('register');
+    var z=document.getElementById('btn');
+    function register()
+    {
+        x.style.left='-400px';
+        y.style.left='50px';
+        z.style.left='110px';
+    }
+    function login()
+    {
+        x.style.left='50px';
+        y.style.left='450px';
+        z.style.left='0px';
+    }
+</script>
+</body>
+</html>
